@@ -37,6 +37,8 @@ void swap_ints(int *x, int *y);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
+void swap_node_ahead(listint_t **list, listint_t **end, listint_t **current);
+void swap_node_behind(listint_t **list, listint_t **end, listint_t **current);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
