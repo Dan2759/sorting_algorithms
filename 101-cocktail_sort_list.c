@@ -60,7 +60,7 @@ void swap_node_behind(listint_t **list, listint_t **end, listint_t **current)
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *end, *current;
-	bool shaken_not_stirred = false;
+	enum bool_t shaken_not_stirred = FALSE;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
@@ -68,16 +68,16 @@ void cocktail_sort_list(listint_t **list)
 	for (end = *list; end->next != NULL;)
 		end = end->next;
 
-	while (shaken_not_stirred == false)
+	while (shaken_not_stirred == FALSE)
 	{
-		shaken_not_stirred = true;
+		shaken_not_stirred = TRUE;
 		for (current = *list; current != end; current = current->next)
 		{
 			if (current->n > current->next->n)
 			{
 				swap_node_ahead(list, &end, &current);
 				print_list((const listint_t *)*list);
-				shaken_not_stirred = false;
+				shaken_not_stirred = FALSE;
 			}
 		}
 		for (current = current->prev; current != *list;
@@ -87,7 +87,7 @@ void cocktail_sort_list(listint_t **list)
 			{
 				swap_node_behind(list, &end, &current);
 				print_list((const listint_t *)*list);
-				shaken_not_stirred = false;
+				shaken_not_stirred = FALSE;
 			}
 		}
 	}

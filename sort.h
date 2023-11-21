@@ -3,19 +3,20 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 #define UP 0
 #define DOWN 1
 
 /**
  * enum bool_t - Enumeration of Boolean values.
- * @false: Equals 0.
- * @true: Equals 1.
+ * @FALSE: Represents false (0).
+ * @TRUE: Represents true (1).
  */
 typedef enum bool_t
 {
-	false = 0,
-	true
+	FALSE = 0,
+	TRUE
 } bool_t;
 
 /**
@@ -39,6 +40,7 @@ void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
 void swap_node_ahead(listint_t **list, listint_t **end, listint_t **current);
 void swap_node_behind(listint_t **list, listint_t **end, listint_t **current);
+int get_max(int *array, int size);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
