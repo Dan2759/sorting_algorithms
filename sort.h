@@ -41,6 +41,8 @@ void quick_sort(int *array, size_t size);
 void swap_node_ahead(listint_t **list, listint_t **end, listint_t **current);
 void swap_node_behind(listint_t **list, listint_t **end, listint_t **current);
 int get_max(int *array, int size);
+void merge_subarr(int *subarr, int *temp, size_t l, size_t m, size_t r);
+void merge_sort_recursive(int *subarr, int *temp, size_t l, size_t r);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
