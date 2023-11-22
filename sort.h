@@ -45,6 +45,8 @@ void merge_subarr(int *subarr, int *temp, size_t l, size_t m, size_t r);
 void merge_sort_recursive(int *subarr, int *temp, size_t l, size_t r);
 void max_heapify(int *array, size_t size, size_t b, size_t root);
 void radix_counting_sort(int *array, size_t size, int sig, int *temp);
+void bitonic_merge(int *array, size_t size, size_t start, size_t s, char c);
+void bitonic_seq(int *array, size_t size, size_t start, size_t s, char c);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
