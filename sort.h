@@ -47,6 +47,8 @@ void max_heapify(int *array, size_t size, size_t b, size_t root);
 void radix_counting_sort(int *array, size_t size, int sig, int *temp);
 void bitonic_merge(int *array, size_t size, size_t start, size_t s, char c);
 void bitonic_seq(int *array, size_t size, size_t start, size_t s, char c);
+int hoare_partition(int *array, size_t size, int l, int r);
+void hoare_sort(int *array, size_t size, int l, int r);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
