@@ -44,6 +44,7 @@ int get_max(int *array, int size);
 void merge_subarr(int *subarr, int *temp, size_t l, size_t m, size_t r);
 void merge_sort_recursive(int *subarr, int *temp, size_t l, size_t r);
 void max_heapify(int *array, size_t size, size_t b, size_t root);
+void radix_counting_sort(int *array, size_t size, int sig, int *temp);
 
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
